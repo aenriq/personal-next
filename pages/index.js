@@ -15,7 +15,10 @@ export default function Home() {
           </a>
         </div>
         <div className={styles.home_description}>
-          Computer science student in junior year at Arizona State University. I am a mechanical keyboard enthusiast.
+          I am a third year computer science student at Arizona State University. I enjoy{" "} <a href="">
+            reading
+          </a>
+           about computers and software.
         </div>
       </main>
     </div>  
