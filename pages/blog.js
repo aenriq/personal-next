@@ -1,6 +1,6 @@
 
 import listStyles from '../styles/List.module.css'
-export default function inspiration()
+export default function blog()
 {
     return(
     <>
