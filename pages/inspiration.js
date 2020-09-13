@@ -1,5 +1,5 @@
 import ReadingData from '../data/readingPosts.json'
-import listStyles from '../styles/list.module.css'
+import listStyles from '../styles/List.module.css'
 export default function inspiration()
 {
     return(
