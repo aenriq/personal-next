@@ -6,7 +6,7 @@ export default function inspiration()
     <>
         <article className="container">
             <ul>
-                {ReadingData.map((readingDetail, index) => {
+                {ReadingData.map((readingDetail) => {
                     return(
                         <li className={listStyles.listitem}>
                             <a target="_blank" href={readingDetail.url}>

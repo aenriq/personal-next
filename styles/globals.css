@@ -42,6 +42,10 @@ body {
   font-family: "Inter";
   background-color: #fefefe;
 }
+::selection {
+  color: #fefefe;
+  background: black;
+}
 
 * {
   box-sizing: border-box;
