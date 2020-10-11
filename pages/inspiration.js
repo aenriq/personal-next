@@ -4,7 +4,7 @@ export default function inspiration()
 {
     return(
     <>
-        <article className="container">
+        <article >
             <ul>
                 {ReadingData.map((readingDetail) => {
                     return(
