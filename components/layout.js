@@ -11,7 +11,7 @@ export default function Layout({ children })
 
         <div className="container">
             <div className="header">
-                <div>aenriq.com</div>
+                <div><Link href="/">aenriq.com</Link></div>
                 <div className="last-item">pages</div>
             </div>
             <main className="children">
@@ -20,13 +20,13 @@ export default function Layout({ children })
 
             <div className="footer">
                     <div id="email">
-                        <Mail size={14} strokeWidth={3} color="black" className="social_media" /> {" "}aenriq29@asu.edu
+                        <Mail size={20} strokeWidth={2} color="black" className="social_media" /> 
                     </div>
                     <div onClick={() => window.open('https://github.com/aenriq', '_blank')} className="social_media">
-                        <GitHub size={14} strokeWidth={3} color="black" /> {" "}github.com/aenriq
+                        <GitHub size={20} strokeWidth={2} color="black" /> 
                     </div>
                     <div onClick={() => window.open('https://twitter.com/tonioenriquez', "_blank")} className="social_media">
-                        <Twitter size={14} strokeWidth={3} color="black" /> {" "}twitter.com/tonioenriquez
+                        <Twitter size={20} strokeWidth={2} color="black" /> 
                     </div>
             </div>{/*  End of footer dom */}
             
@@ -35,11 +35,12 @@ export default function Layout({ children })
         {`
             .header{
                 margin-botton:50px;
-                padding-bottom: 30px;
+                padding-bottom: 50px;
                 display:flex;
                 justify-content: space-between;
-                font-size:2vh;
+                font-size:20px;
                 width:40vw;
+                min-width:370px;
                 height:5vh;
                 font-weight:300;
             }
@@ -51,7 +52,8 @@ export default function Layout({ children })
             .footer{
                 display:flex;
                 justify-content: space-between;
-                width:40vw;
+                width:30vw;
+                min-width:300px;
                 height:5vh;
                 padding-bot: 30px;
                 position: absolute;
@@ -60,7 +62,8 @@ export default function Layout({ children })
             }
 
             .footer div{
-                font-size:calc(1vh + .5vw);
+                font-size:14px;
+
             }
 
             .last-item{
@@ -68,7 +71,8 @@ export default function Layout({ children })
             }
 
             .children{
-
+                width:40vw;
+                min-width:370px;
             }
         `}
         </style>
