@@ -39,8 +39,9 @@ export default function Layout({ children })
                 display:flex;
                 justify-content: space-between;
                 font-size:20px;
-                width:40vw;
+                width:35vw;
                 min-width:370px;
+                max-width:685px;
                 height:5vh;
                 font-weight:300;
             }
@@ -51,9 +52,9 @@ export default function Layout({ children })
 
             .footer{
                 display:flex;
-                justify-content: space-between;
-                width:30vw;
-                min-width:300px;
+                justify-content: space-between;     
+                min-width:200px;
+                max-width:200px;
                 height:5vh;
                 padding-bot: 30px;
                 position: absolute;
@@ -71,8 +72,9 @@ export default function Layout({ children })
             }
 
             .children{
-                width:40vw;
+                width:35vw;
                 min-width:370px;
+                max-width:685;
             }
         `}
         </style>
