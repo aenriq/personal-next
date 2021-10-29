@@ -14,7 +14,7 @@ export default function Home() {
       </Head>
       <main>
         <div className={styles.home_description}>
-          Hi I'm Antonio, a third year computer science student at Arizona State University. I enjoy browsing aesthetically designed{" "} 
+          Hi I'm Antonio, a senior studying computer science at Arizona State University. I enjoy browsing aesthetically designed{" "} 
           <Link href='/inspiration'><a className={"linkDisplay"}>websites</a></Link>
           {" "}for inspiration as I am passionate about minimalist web design.
           
