@@ -1,93 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600;700&display=swap');
-
-@font-face{
-  font-family: "Inter";
-  src: url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600;700&display=swap');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face{
-  font-family: "Inter";
-  src: url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600;700&display=swap');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face{
-  font-family: "Inter";
-  src: url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap');
-  font-weight: lighter;
-  font-style: normal;
-}
-
-@font-face{
-  font-family: "Inter";
-  src: url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600;700&display=swap');
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face{
-  font-family: "Inter";
-  src: url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap');
-  font-weight: bold;
-  font-style: normal;
-}
-
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Inter";
-  background-color: #fefefe;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
-::selection {
-  color: #fefefe;
-  background: black;
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 * {
   box-sizing: border-box;
 }
 
-
-.container{
-  display:flex;
-  height:100vh;
-  align-items:center; 
-  flex-direction: column;
-  padding-top: 5vh;
-}
-
-a.linkDisplay {
-  outline: none;
-  text-decoration: none;
-  color: inherit;
-  position: relative;
-  z-index: 1;
-  white-space: nowrap;
-}
-
-a.linkDisplay::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: calc(8px);
-  background-color: #F8E16C;
-  z-index: -1;
-  transition: height 150ms ease-in-out;
-}
-
-a.linkDisplay:hover::before,
-a.linkDisplay:focus::before {
-  height: 100%;
-  transition: height 150ms ease-in-out;
-}
-
-a{
-  text-decoration: none;
-  color:black;
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
 }
